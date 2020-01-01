@@ -1,5 +1,4 @@
-# airplanes
-Installation
+### Installation
 1. Run inside 'docker' folder
 
     `docker-compose up -d`
@@ -17,7 +16,25 @@ Installation
     set `DB_HOST` parameter in `/app/config.php`
 
 3. Run `composer install`
+4. Run migrations in DB from folder: `/app/migrations/`
+    
+    to enter to DB environment use
+    
+    `docker-compose exec postgres`
+    
+    inside environment use
+    
+    `psql db_name db_user`
 
-Endpoint for "Part 2":
+### Endpoint for "Part 2":
 
 `GET /hangars/{id}`
+
+### Running tests
+Enter to php-fpm environment:
+
+`docker-compose exec php-fpm`
+
+go to `'/app/tests'` folder and run
+
+`phpunit --bootstrap ../vendor/autoload.php .`
