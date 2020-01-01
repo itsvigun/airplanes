@@ -30,7 +30,7 @@
 
 `GET /hangars/{id}`
 
-### Running tests
+### Run tests
 Enter to php-fpm environment:
 
 `docker-compose exec php-fpm`
