@@ -20,7 +20,7 @@
     
     to enter to DB environment use
     
-    `docker-compose exec postgres`
+    `docker-compose exec postgres bash`
     
     inside environment use
     
@@ -30,10 +30,10 @@
 
 `GET /hangars/{id}`
 
-### Running tests
+### Run tests
 Enter to php-fpm environment:
 
-`docker-compose exec php-fpm`
+`docker-compose exec php-fpm bash`
 
 go to `'/app/tests'` folder and run
 
