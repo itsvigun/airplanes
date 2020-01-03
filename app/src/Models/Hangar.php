@@ -95,7 +95,8 @@ class Hangar
         $this->updatedAt = $updatedAt;
     }
 
-    public function getAircraftsById($id) {
+    public function getAircraftsById($id)
+    {
         return $this->repository->getAircraftsInfoById($id);
     }
 }

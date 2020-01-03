@@ -13,7 +13,8 @@ class HangarController
         $this->hangarService = new HangarService();
     }
 
-    public function getAircraftsByIdAction($id) {
+    public function getAircraftsByIdAction($id)
+    {
         return $this->hangarService->getAircraftsById($id);
     }
 }
