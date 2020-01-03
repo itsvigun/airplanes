@@ -2,11 +2,11 @@
 
 namespace Aircrafts\Tests;
 
-use Aircrafts\Boeing747Builder;
-use Aircrafts\NC4Builder;
-use Aircrafts\A24Builder;
+use Aircrafts\Builders\Boeing747Builder;
+use Aircrafts\Builders\NC4Builder;
+use Aircrafts\Builders\A24Builder;
 use Aircrafts\Models\Airplane;
-use Aircrafts\Director;
+use Aircrafts\Builders\Director;
 use Aircrafts\Models\Fly;
 use Aircrafts\Models\Land;
 use Aircrafts\Models\Takeoff;

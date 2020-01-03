@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Aircrafts;
+namespace Aircrafts\Builders;
 
 use Aircrafts\Models\Airplane;
 use Aircrafts\Models\Takeoff;

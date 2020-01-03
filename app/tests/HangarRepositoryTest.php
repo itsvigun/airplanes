@@ -2,14 +2,6 @@
 
 namespace Aircrafts\Tests;
 
-use Aircrafts\Boeing747Builder;
-use Aircrafts\NC4Builder;
-use Aircrafts\A24Builder;
-use Aircrafts\Models\Airplane;
-use Aircrafts\Director;
-use Aircrafts\Models\Fly;
-use Aircrafts\Models\Land;
-use Aircrafts\Models\Takeoff;
 use Aircrafts\Repositories\HangarRepository;
 use PHPUnit\Framework\TestCase;
 require_once ('../config.php');
@@ -24,7 +16,7 @@ class HangarRepositoryTest extends TestCase
         $result = $repository->getAircraftsInfoById($id);
         $this->assertCount(3, $result);
 
-        $id = 151;
+        $id = -1; //fake id
         $result = $repository->getAircraftsInfoById($id);
         $this->assertCount(0, $result);
     }
